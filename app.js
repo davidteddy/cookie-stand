@@ -46,10 +46,10 @@ Shops.prototype.showOnPage = function() {
     trEl.appendChild(thEl);
   };
   tableEl.appendChild(trEl);
-  for (var index = 0; index < stores.length; index++){
+  for (var index = 0; index < 5; index++){
     var trEl = document.createElement('tr');
     trEl.textContent = stores[index];
-    for (var j = 0; j < this.cookiesArray.length; j++){
+    for (var j = 0; j < 15; j++){
       var tdEl = document.createElement('td');
       tdEl.textContent = this.cookiesArray[j];
       trEl.appendChild(tdEl);
