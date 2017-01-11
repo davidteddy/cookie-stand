@@ -76,6 +76,9 @@ seaTacAir.cookieProducer();
 seaTacAir.showOnPage();
 var seattleCeter = new Shops('Seattle Center', 11,38,3.7);
 console.log(seattleCeter);
+seattleCeter.randomCust();
+seattleCeter.cookieProducer();
+seattleCeter.showOnPage();
 
 var capitolHill = new Shops('Capitol Hill', 20,38,2.3);
 console.log(capitolHill);
