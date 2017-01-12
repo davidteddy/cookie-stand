@@ -9,9 +9,13 @@ formEl.addEventListener('submit', function (event) {
   event.stopPropagation();
 
   var storeName = event.target.storeName.value;
+  console.log(storeName);
   var minCustomer = event.target.minCustomer.value;
+    console.log(minCustomer);
   var maxCustomer = event.target.maxCustomer.value;
+    console.log(maxCustomer);
   var aveCookie = event.target.aveCookie.value;
+    console.log(aveCookie);
 
   createObject(storeName, minCustomer, maxCustomer, aveCookie); //call
 
@@ -19,15 +23,15 @@ formEl.addEventListener('submit', function (event) {
 
 function Shops(storeName, minCustomer, maxCustomer, aveCookie) {
   this.storeName = storeName;
-  this.min = minCustomer;
-  this.max = maxCustomer;
-  this.average = aveCookie;
+  this.min = parseInt(minCustomer);
+  this.max = parseInt(maxCustomer);
+  this.average = parseInt(aveCookie);
   this.cookiesArray = [];
 }
 
 Shops.prototype.randomCust = function (minCustomer, maxCustomer) {
   return Math.floor(Math.random() * (this.max - this.min)) + this.min;
-  //console.log(randomCust());
+  /*console.log(randomCust());*/
 };
 
 Shops.prototype.cookieProducer = function () {
@@ -77,9 +81,12 @@ for (var i = 0; i < hours.length; i++) {
 tableEl.appendChild(trEl);
 
 function createObject(storeName, minCustomer, maxCustomer, aveCookie) {
-  console.log(storeName);
+  // console.log(storeName);
   var formInput = new Shops(storeName, minCustomer, maxCustomer, aveCookie);
-  console.log(formInput.randomCust());
+  console.log(formInput);
+  formInput.randomCust();
+  formInput.cookieProducer();
+  formInput.showOnPage();
 }
 
 var firstAndPike = new Shops('1st and Pike ', 23, 65, 6.3);
