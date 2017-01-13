@@ -45,7 +45,9 @@ input{
 }
 table{
   color:white;
-align-items: center;
+  width: 75%;
+  height: 75px;
+
 }
 table, th, td{
   border:1px solid white;
