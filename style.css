@@ -1,0 +1,57 @@
+html{
+  background-color: #B70E24;
+}
+
+header{
+  text-align: center;
+  color: #FEFEFE;
+  border-style: outset;
+  border-color: white;
+
+}
+
+div#image-of-fish{
+  text-align: center;
+  color: white;
+  background-image: url("assets/salmon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section#stay-left{
+  text-align: left;
+  border-style: double;
+  border-color: white;
+  padding-left: 1%;
+
+}
+
+a{
+  color: white;
+}
+
+footer{
+  color: white;
+}
+
+label{
+  color:white;
+}
+
+legend{
+  color:white;
+}
+input{
+  color:white;
+}
+table{
+  color:white;
+align-items: center;
+}
+table, th, td{
+  border:1px solid white;
+}
+#cookie-table{
+  align-items: center;
+  margin: auto;
+  margin-top: 100px;
+}

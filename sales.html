@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
-    <body>
-      <ul id="cookie-sales"></ul>
-    </body>
-      <script type ="text/javascript" src="app.js"></script>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sales predictions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section id="form-input">
+
+    <form id="first-form">
+      <fieldset>
+        <legend>NEW LOCATIONS</legend>
+
+        <label for="store-name">Store Location</label>
+        <input type="text" id="store-name-input" name="storeName">
+        <label for="minimum-customer">Minimum Customer</label>
+        <input type="text" id="min-cust" name="minCustomer">
+        <label for="maximum-customer">Maximum Customer</label>
+        <input type="text" id="max-cust" name="maxCustomer">
+        <label for="average-cookies">Average Cookies Sold</label>
+        <input type="text" id="ave-cookies" name="aveCookie">
+
+        <button type="submit" id="info-button">Enter</button>
+
+
+
+
+      </fieldset>
+    </form>
+
+  </section>
+  <table id="cookie-table">
+  </table>
+</body>
+<script type="text/javascript" src="app.js"></script>
+
 </html>
