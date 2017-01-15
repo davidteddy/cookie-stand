@@ -13,9 +13,6 @@ header{
 div#image-of-fish{
   text-align: center;
   color: white;
-  background-image: url("assets/salmon.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 section#stay-left{
   text-align: left;
