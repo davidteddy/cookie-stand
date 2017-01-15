@@ -11,11 +11,11 @@ formEl.addEventListener('submit', function (event) {
   var storeName = event.target.storeName.value;
   console.log(storeName);
   var minCustomer = event.target.minCustomer.value;
-    console.log(minCustomer);
+  console.log(minCustomer);
   var maxCustomer = event.target.maxCustomer.value;
-    console.log(maxCustomer);
+  console.log(maxCustomer);
   var aveCookie = event.target.aveCookie.value;
-    console.log(aveCookie);
+  console.log(aveCookie);
 
   createObject(storeName, minCustomer, maxCustomer, aveCookie); //call
 
